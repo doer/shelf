@@ -1,0 +1,15 @@
+{
+    "name": "php-labs/shelf",
+    "description": "一个漂亮易用的终端命令行工具",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "铁岭王力宏",
+            "email": "anoxia@engineer.com"
+        }
+    ],
+    "require": {
+        "league/climate": "^3.5"
+    }
+}
