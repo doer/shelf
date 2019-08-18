@@ -1,7 +1,7 @@
 {
     "name": "php-labs/shelf",
     "description": "一个漂亮易用的终端命令行工具",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -9,8 +9,20 @@
             "email": "anoxia@engineer.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Shelf\\": "./src"
+        },
+        "files": ["./src/helper.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shelf\\Tests\\": "./tests"
+        }
+    },
     "require": {
-        "league/climate": "^3.5"
+        "league/climate": "^3.5",
+        "php-school/terminal": "^0.2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.2"
